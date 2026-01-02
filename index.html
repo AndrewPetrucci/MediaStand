@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madmans Media Mashup Stand</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg,
+                    #1a0033,
+                    #0066cc,
+                    #4a0080,
+                    #1e40af,
+                    #000000);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-width: max-content;
+        }
+
+        h1 {
+            text-align: left;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: left;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1em;
+        }
+
+        .media-section {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .media-section iframe {
+            border-radius: 12px;
+            height: 315px;
+            width: 100%;
+        }
+
+
+        .album-title {
+            padding: 15px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+
+        .instructions {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .instructions h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .instructions li {
+            margin-bottom: 12px;
+        }
+
+        .code-block {
+            background: #f4f4f4;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border-radius: 4px;
+        }
+
+        .deezer-logo {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .dark-panel {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .header-wrapper {
+            margin-bottom: 30px;
+        }
+
+        .header-wrapper h1,
+        .header-wrapper p {
+            text-align: center;
+        }
+
+        .instructions {
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5em;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .webring-nav {
+
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .webring-link {
+            background: #FF6B6B;
+            color: rgba(255, 255, 255, 0.9);
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-wrapper dark-panel">
+            <h1>Madmans Media Mashup Stand</h1>
+            <p class="subtitle">Have you ever wondered what a mixed media dashboard might look like? Wonder no more
+                with this lightweight customizable page!</p>
+        </div>
+
+        <div class="dark-panel">
+            <h2>Deezer Delights</h2>
+            <div class="media-section">
+                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/451265215" width="100%"
+                    height="300" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media; clipboard-write"></iframe>
+
+                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/791483241" width="100%"
+                    height="300" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media; clipboard-write"></iframe>
+
+                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/54294542" width="100%"
+                    height="300" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media; clipboard-write"></iframe>
+
+                <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/54307722" width="100%"
+                    height="300" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media; clipboard-write"></iframe>
+
+            </div>
+        </div>
+
+        <div class="dark-panel">
+            <h2>Youtube Yarn</h2>
+            <div class="media-section">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gv4sDL9Ljww?si=T0AMv9OPnTT0Yfra"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HMmmBDRy-jE?si=01lChf7SFAGzftUq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K2QbmSDt2kc?si=YOhyazf1arXgBYgj"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tXKSmpcwVSE?si=W4I0ElXLY5WqFmL_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+
+        <div class="instructions dark-panel">
+            <h2>How to Add Your Favorite Stuff</h2>
+            <ol>
+                <li>Find a piece of media on any platform that supports embedding</li>
+                <li>Usually embedding is an option under sharing and you can ask an LLM for a walkthrough if you are
+                    unsure</li>
+                <li>Copy and paste the embedding code into whatever div you want. This should have an iframe element
+                    with a url.</li>
+                <li>(optional) More comfortable users should incorporate a loop over an array of contentIds to render
+                    out content</li>
+            </ol>
+        </div>
+
+        <footer class="dark-panel">
+            <div class=" webring-nav">
+                <a href="/api/previous" class="webring-link">← Previous Stand</a>
+                <a href="/api/random" class="webring-link">Random Stand</a>
+                <a href="/api/next" class="webring-link">Next Stand →</a>
+            </div>
+            <p>🍋 Powered by pure sugar, water, and rebellion 🍋</p>
+            <p>Part of the decentralized web revolution</p>
+            <p>By the stans, for the stans</p>
+        </footer>
+    </div>
+</body>
+
+</html>
