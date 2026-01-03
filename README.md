@@ -1,4 +1,4 @@
-# Madman's Media Mashup Stand
+# Media Stand
 
 A lightweight, customizable mixed media dashboard that displays embedded content from multiple platforms in a single, stylish interface.
 
